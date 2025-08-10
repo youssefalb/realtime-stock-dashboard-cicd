@@ -1,0 +1,39 @@
+# Ignore the virtual environment directory
+venv/
+
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore environment files
+.env
+*.env
+
+# Ignore pipenv and poetry files (if you're using them)
+Pipfile
+Pipfile.lock
+poetry.lock
+
+# Ignore system files (macOS, Windows, etc.)
+.DS_Store
+Thumbs.db
+
+# Ignore IDE and editor files (VSCode, PyCharm, etc.)
+.vscode/
+.idea/
+
+# Ignore log files
+*.log
+
+# Ignore other configuration files that shouldn't be committed
+*.sqlite3
+*.db
+
+# Ignore sensitive data files (e.g., API keys, credentials)
+*.key
+*.pem
+
+
+# test files
+testfile.txt
