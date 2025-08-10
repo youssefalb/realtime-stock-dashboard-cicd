@@ -1,7 +1,19 @@
 from fastapi import FastAPI
 import requests
+from fastapi.middleware.cors import CORSMiddleware
+
+
 
 app = FastAPI()
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],  # React frontend URL
+    allow_credentials=True,
+    allow_methods=["*"],  # Allow all methods (GET, POST, etc.)
+    allow_headers=["*"],  # Allow all headers
+)
 
 # Replace with your Alpha Vantage API key
 API_KEY = '8XWUQRSLGIMIUVGL'  
